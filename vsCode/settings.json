@@ -1,0 +1,67 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel"       : 1,
+    "files.autoSave"         : "onFocusChange",
+    "editor.fontSize"        : 15,
+    "files.exclude"          : {
+        "**/.git"         : true,
+        "**/.svn"         : true,
+        "**/.hg"          : true,
+        "**/CVS"          : true,
+        "**/.DS_Store"    : true,
+        "**/node_modules" : true,
+        "**/_node_modules": true,
+        ".idea"           : true
+    },
+    "files.associations": {
+        "*.js": "javascript"
+    },
+    "editor.find.autoFindInSelection": true,
+    "editor.acceptSuggestionOnEnter" : "smart",
+    "editor.snippetSuggestions"      : "top",
+    "editor.wordWrapColumn"          : 100,
+    "editor.wordWrap"                : "on",
+    "editor.minimap.showSlider"      : "always",
+    "editor.minimap.enabled"         : false,
+    "editor.cursorStyle"             : "line",
+    "editor.cursorBlinking"          : "phase",
+    "editor.renderLineHighlight"     : "line",
+    "editor.formatOnSave"            : false,
+    "editor.links"                   : false,
+    "editor.dragAndDrop"             : false,
+    "telemetry.enableTelemetry"      : false,
+    "telemetry.enableCrashReporter"  : false,
+    "window.menuBarVisibility"       : "toggle",
+    "files.trimTrailingWhitespace"   : true,
+    "problems.autoReveal"            : false,
+    "update.channel"                 : "default",
+    "workbench.iconTheme"            : "material-icon-theme",
+    "git.enabled"                    : true,
+    "extensions.autoUpdate"          : true,
+    "git.enableSmartCommit"          : true,
+    "todohighlight.defaultStyle"     : {},
+    "javascript.format.enable"       : true,
+    "workbench.colorTheme"           : "Material Theme",
+    "files.trimFinalNewlines"        : true,
+    "files.insertFinalNewline"       : true,
+    "explorer.confirmDelete"         : false,
+    "[javascript]"                   : {
+
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "vue"
+    ],
+    "eslint.options": {
+        "configFile": "C:/Users/Administrator.DESKTOP-ON5VPQH/.eslintrc.js",
+    },
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.rulers"                  : [
+        80,
+        100
+    ],
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "files.eol"                                    : "\n"
+}
