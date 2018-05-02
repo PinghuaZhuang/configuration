@@ -1,6 +1,6 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel"       : 1,
+    "window.zoomLevel": 1,
     "files.autoSave"         : "onFocusChange",
     "editor.fontSize"        : 15,
     "files.exclude"          : {
@@ -32,7 +32,7 @@
     "telemetry.enableTelemetry"      : false,
     "telemetry.enableCrashReporter"  : false,
     "window.menuBarVisibility"       : "toggle",
-    "files.trimTrailingWhitespace"   : true,
+    "files.trimTrailingWhitespace": true,
     "problems.autoReveal"            : false,
     "update.channel"                 : "default",
     "workbench.iconTheme"            : "material-icon-theme",
@@ -42,7 +42,7 @@
     "todohighlight.defaultStyle"     : {},
     "javascript.format.enable"       : true,
     "workbench.colorTheme"           : "Material Theme",
-    "files.trimFinalNewlines"        : true,
+    "files.trimFinalNewlines": true,
     "files.insertFinalNewline"       : true,
     "explorer.confirmDelete"         : false,
     "[javascript]"                   : {
@@ -56,6 +56,7 @@
     ],
     "eslint.options": {
         "configFile": "C:/Users/Administrator.DESKTOP-ON5VPQH/.eslintrc.js",
+        "plugins": [ "html", "vue" ]
     },
     "diffEditor.ignoreTrimWhitespace": true,
     "editor.rulers"                  : [
