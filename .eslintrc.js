@@ -4,7 +4,6 @@ module.exports = {
     root: true,
     parser: 'babel-eslint',
     parserOptions: {
-        // parser: 'babel-eslint',
         ecmaVersion: 6,
         sourceType: 'module'
         // allowImportExportEverywhere: true
@@ -20,11 +19,19 @@ module.exports = {
         // 'standard',
         'jquery'
     ],
+
     // required to lint *.vue files
     plugins: [
         'vue',
         'html'
     ],
+
+    globals: {
+		define: true,
+        module: true,
+        Promise: true
+	},
+
     // add your custom rules here
     rules: {
 
