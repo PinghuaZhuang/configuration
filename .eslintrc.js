@@ -45,7 +45,12 @@ module.exports = {
         // 多个空格
         // a  =    19;
         // 行尾注释多个空格
-        'no-multi-spaces': [ 'error', { exceptions: { 'VariableDeclarator': true }, ignoreEOLComments: true } ],
+        'no-multi-spaces': [ 'error', {
+            exceptions: {
+                'VariableDeclarator': true
+            },
+            ignoreEOLComments: true
+        } ],
 
         // 函数前空格
         'space-before-function-paren': ['error', {
