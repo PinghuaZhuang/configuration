@@ -29,7 +29,11 @@ module.exports = {
     globals: {
 		define: true,
         module: true,
-        Promise: true
+        Promise: true,
+        require: true,
+        WeakMap: true,
+        WeakSet: true,
+        $: true
 	},
 
     // add your custom rules here
