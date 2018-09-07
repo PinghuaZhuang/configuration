@@ -1,0 +1,424 @@
+{
+    "Print to console": {
+        "prefix": "log",
+        "body": [
+            "console.log( '$1:', $2 );"
+        ],
+        "description": "Log output to console"
+    },
+    "Print to console2": {
+        "prefix": "logg",
+        "body": [
+            "console.log( '$1' );"
+        ],
+        "description": "Log output to console"
+    },
+    "cancelAnimationFrame": {
+        "prefix": "zpcancel",
+        "body": [
+            "window.cancelAnimationFrame($1);"
+        ],
+        "description": "(id) 取消requestAnimationFrame动画"
+    },
+    "严格模式": {
+        "prefix": "zptip严格模式",
+        "body": [
+            "\"use strict;\""
+        ],
+        "description": "严格模式 Inserts 'use strict' statement"
+    },
+    "defineProperty": {
+        "prefix": "zptipdefineProperty",
+        "body": [
+            "configurable: false,"
+            "writable: false,"
+            "enumerable: false "
+        ],
+        "description": "设置属性"
+    },
+    "根据id获取元素": {
+        "prefix": "dgi",
+        "body": [
+            "document.getElementById(\"$1\");"
+        ],
+        "description": "根据id获取元素"
+    },
+    "根据tag获取元素": {
+        "prefix": "dgt",
+        "body": [
+            "document.getElementsByTagName(\"$1\");"
+        ],
+        "description": "根据tag获取元素"
+    },
+    "dq": {
+        "prefix": "dq",
+        "body": [
+            "document.querySelector(\"$1\");"
+        ],
+        "description": "C3选择器"
+    },
+    "dqa": {
+        "prefix": "dqa",
+        "body": [
+            "document.querySelectorAll(\"$2\");"
+        ],
+        "description": "C3选择器"
+    },
+    "请求发送成功的兼容写法": {
+        "prefix": "zpxhronready",
+        "body": [
+            "xhr.onreadystatechange = function () {",
+            "if (xhr.status === 200 && xhr.readyState === 4) {",
+            "    console.log(xhr.responseText);",
+            "}"
+        ],
+        "description": "请求发送成功的兼容写法"
+    },
+    "AJAX": {
+        "prefix": "zpxhr",
+        "body": [
+            "const ROOTRUL = \"$1\";",
+
+            "var xhr = new XMLHttpRequest();",
+            "xhr.open(\"post\", ROOTRUL);",
+            "xhr.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");",
+            "xhr.send(null);",
+
+            "xhr.onload = function () {",
+            "$0",
+            "};"
+        ],
+        "description": "AJAX"
+    },
+    "清除鼠标选中的文字状态": {
+        "prefix": "zptip清除鼠标选中的文字状态",
+        "body": [
+            "window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();"
+        ],
+        "description": "清除鼠标选中的文字状态"
+    },
+    "光标移动到末尾": {
+        "prefix": "zptip光标移动到末尾",
+        "body": [
+            "function moveCursorToEnd(inp){",
+            "    inp.focus();",
+            "    var len = inp.value.length;",
+            "    if (typeof inp.selectionStart == 'number' && typeof inp.selectionEnd == 'number') {",
+            "        inp.selectionStart = len;",
+            "        inp.selectionEnd = len;",
+            "    } else if (document.selection) {",
+            "        // ie 8",
+            "        var sel = inp.createTextRange();",
+            "        //设置开头的位置",
+            "        sel.moveStart('character',len);",
+            "        sel.collapse();",
+            "        sel.select();",
+            "    }",
+            "}"
+        ],
+        "description": "光标移动到末尾"
+    },
+    "getScroll": {
+        "prefix": "zptipgetScroll",
+        "body": [
+            "function getScroll() {",
+            "    return {",
+            "        top: window.pageYOffset || document.documentElement.scrollTop,",
+            "        left: window.pageXOffset || document.documentElement.scrollLeft",
+            "    }",
+            "}"
+        ],
+        "description": "getScroll"
+    },
+    "getMouseXYOfScr": {
+        "prefix": "zptipgetMouseXYOfScr",
+        "body": [
+            "function getMouseXYOfScr() {",
+            "    var pagex = event.pageX || event.clientX + scroll().left;",
+            "    var pagey = event.pageY || event.clientY + scroll().top;",
+            "    return {x: pagex, y: pagey};",
+            "}"
+        ],
+        "description": "getMouseXYOfScr"
+    },
+    "getClient": {
+        "prefix": "zptipgetClient",
+        "body": [
+            "function getClient() {",
+            "    if(window.innerWidth !== undefined) {",
+            "        return {",
+            "            width: window.innerWidth,",
+            "            height: window.innerHeight",
+            "        };",
+            "    } else if(document.compatMode === \"CSS1Compat\") {",
+            "        return {",
+            "            width: document.documentElement.clientWidth,",
+            "            height: document.documentElement.clientHeight",
+            "        };",
+            "    } else if(document.compatMode === \"backCompat\") {",
+            "        return {",
+            "            width: document.body.clientWidth,",
+            "            height: document.body.clientHeight",
+            "        };",
+            "    }",
+            "}"
+        ],
+        "description": "getClient"
+    },
+    "getPreviousElement": {
+        "prefix": "zptipgetPreviousElement",
+        "body": [
+            "function getPreviousElement(ele){",
+            "    if(ele.previousElementSibling){",
+            "        return ele.previousElementSibling;",
+            "    }else{",
+            "        var node = ele.previousSibling;",
+            "        while(node.nodeType != 1){",
+            "            node = node.previousSibling",
+            "        }",
+            "        return node;",
+            "    }",
+            "}"
+        ],
+        "description": "getPreviousElement"
+    },
+    "getNextElement": {
+        "prefix": "zptipgetNextElement",
+        "body": [
+            "function getNextElement(ele){",
+            "    if(ele.nextElementSibling){",
+            "        return ele.nextElementSibling;",
+            "    }else {",
+            "        var node = ele.nextSibling;",
+            "        while(node.nodeType != 1){",
+            "            node = node.nextSibling",
+            "        }",
+            "        return node;",
+            "    }",
+            "}"
+        ],
+        "description": "getNextElement"
+    },
+    "getLastChildElement": {
+        "prefix": "zptipgetLastChildElement",
+        "body": [
+            "function getLastChildElement(ele){",
+            "    if(ele.lastElementChild){",
+            "        return ele.lastElementChild;",
+            "    }else {",
+            "        var node = ele.lastChild;",
+            "        while(node.nodeType != 1){",
+            "            node = node.previousSibling;",
+            "        }",
+            "        return node;",
+            "    }",
+            "}"
+        ],
+        "description": "getLastChildElement"
+    },
+    "getFirstChildElement": {
+        "prefix": "zptipgetFirstChildElement",
+        "body": [
+            "function getFirstChildElement(ele){",
+            "    if(ele.firstElementChild){",
+            "        return ele.firstElementChild;",
+            "    }else {",
+            "        var node = ele.firstChild;",
+            "        while(node.nodeType != 1){",
+            "            node= node.nextSibling;",
+            "        }",
+            "        return node;",
+            "    }",
+            "}"
+        ],
+        "description": "getFirstChildElement"
+    },
+    "setText": {
+        "prefix": "zptipsetText",
+        "body": [
+            "function setText(ele,text){",
+            "   if(typeof ele.textContent  == \"string\"){",
+            "       ele.textContent = text;",
+            "   } else {",
+            "       ele.innerText = text;",
+            "   }",
+            "}"
+        ],
+        "description": "setText"
+    },
+    "getText": {
+        "prefix": "zptipgetText",
+        "body": [
+            "function getText(ele){",
+            "   if(typeof ele.textContent  == \"string\"){",
+            "       return ele.textContent;",
+            "   } else {",
+            "       return ele.innerText;",
+            "   }",
+            "}"
+        ],
+        "description": "getText"
+    },
+    "requierJS1": {
+        "prefix": "zptipboostrap不支持AMD规范",
+        "body": [
+            "require.config({",
+            "   baseUrl:\"./lib\",",
+            "   paths:{",
+            "       //路径不需要.js后缀，最终该文件的路径将会和baseUrl拼接，也就是：\"./lib/js/jquery-2.1.4\"",
+            "       jquery:\"js/jquery-2.1.4\",",
+            "       bootstrap:\"assets/bootstrap/bootstrap\"",
+            "   },",
+            "   shim:{",
+            "       bootstrap:{",
+            "       //这样在请求bootstrap的时候会自动去请求jquery模块",
+            "       deps:[\"jquery\"]",
+            "       }",
+            "   }",
+            "})"
+        ],
+        "description": "boostrap不支持AMD规范的解决办法"
+    },
+    "requierJS2": {
+        "prefix": "zptiprequierJS设置根路径",
+        "body": [
+            "require.config({",
+            "   baseUrl:\"./lib\",",
+            "   paths:{",
+            "       //路径不需要.js后缀，最终该文件的路径将会和baseUrl拼接，也就是：\"./lib/js/jquery-2.1.4\"",
+            "       jquery:\"js/jquery-2.1.4\"",
+            "   }",
+            "})"
+        ],
+        "description": "requierJS设置根路径"
+    },
+    "function": {
+        "prefix": "func",
+        "body": [
+            "function ($1) {"
+            "}"
+        ],
+        "description": "function函数"
+    },
+    "reader": {
+        "prefix": "zptipreader",
+        "body": [
+            "inp.onchange = function (e) {",
+            "   var files = Array.from(e.target.files);",
+            "   files.forEach(function (file, index) {",
+            "   var reader = new FileReader();",
+            "   reader.readAsText(file);",
+            "   reader.onload = function (e) {",
+            "   var text = e.target.result;",
+            "   }",
+            "   });",
+            "}"
+        ],
+        "description": "reader获取结果"
+    },
+    "download": {
+        "prefix": "zptipdownload",
+        "body": [
+            "function $1(e) {"
+            "   var text = e.target.result;",
+            "   var blob = new Blob([text], { text: \"text/plain\" });",
+            "   var url = window.URL.createObjectURL(blob);",
+            "   // 模拟点击",
+            "   var a = document.createElement(\"a\");",
+            "   a.setAttribute(\"href\", url);",
+            "   a.setAttribute(\"download\", file.name);",
+            "   a.onclick = function () {",
+            "   window.setTimeout(function () {",
+            "   // 释放 blob 对象",
+            "   window.URL.revokeObjectURL(url);",
+            "   }, 0)",
+            "   }",
+            "   a.click();",
+            "}"
+        ],
+        "description": "利用a标签下载文件"
+    },
+    "阻止冒泡": {
+        "prefix": "zpstop",
+        "body": [
+            "e.stopPropagation();"
+        ],
+        "description": "阻止冒泡"
+    },
+    "阻止事件默认行为": {
+        "prefix": "zppre",
+        "body": [
+            "e.preventDefault();"
+        ],
+        "description": "阻止事件默认行为"
+    },
+    "解码": {
+        "prefix": "zptip解码",
+        "body": [
+            "decodeURIComponent($1);"
+        ],
+        "description": "解码, 对应encodeURLComponent()"
+    },
+    "注释": {
+        "prefix": "zp==",
+        "body": [
+            "/* $1 */",
+            "/* ================================================= */"
+        ],
+        "description": "注释"
+    },
+    "todo": {
+        "prefix": "zptodo",
+        "body": [
+            "// ### codeContinue..."
+        ],
+        "description": "todo"
+    },
+    "serilize": {
+        "prefix": "zpserilize",
+        "body": [
+            "$($1).serilize();"
+        ],
+        "description": "表单格式化"
+    },
+    "文件注释": {
+        "prefix": "zpzs",
+        "body": [
+            "/**",
+            "* 添加讲师$3",
+            "*   Author: hodo",
+            "*   Date: 2017/$1/$2",
+            "*/"
+        ],
+        "description": "文件注释"
+    },
+    "获取尺寸": {
+        "prefix": "zpgetBoundingClientRect",
+        "body": [
+            "getBoundingClientRect($1)"
+        ],
+        "description": "获取尺寸"
+    },
+    "angular": {
+        "prefix": "zpangular",
+        "body": [
+            "var ng = angular.module('$1', []);",
+
+            "ng.controller('cl', ['$scope', function ($scope) {",
+
+            "}]);"
+        ],
+        "description": "获取尺寸"
+    },
+    "$http": {
+        "prefix": "zpngjsonp",
+        "body": [
+            "app.config(['$sceDelegateProvider', function ($sceDelegateProvider) {",
+
+            "    // 设置跨域白名单",
+            "    $sceDelegateProvider.resourceUrlWhitelist(['https://api.asilu.com/weather/']);",
+            "}])"
+        ],
+        "description": "获取尺寸"
+    }
+}
