@@ -91,7 +91,7 @@ Windows 总是被人吐槽设计平庸、系统臃肿、品味低下，但 Windo
 [25]: https://www.icyarrow.com/haloradio/
 [26]: https://store.steampowered.com/about/Steam:?l=schinese
 [27]: https://zh.wikipedia.org/wiki/Steam
-[28]: http://www.yuesir.com/school/1733.html
+[28]: https://www.digimezzo.com/content/software/dopamine/
 [29]: https://www.getpostman.com/apps
 [30]: https://zh.snipaste.com/
 [31]: https://zh.snipaste.com/
