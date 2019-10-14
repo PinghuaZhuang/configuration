@@ -41,7 +41,7 @@ Windows 总是被人吐槽设计平庸、系统臃肿、品味低下，但 Windo
 |     Beyond Compare 4      |              最好用的文件对比软件               |       [下载][16]       |
 |        everything         |                  快速搜索文件                   |       [下载][18]       |
 | Internet Download Manager |         支持多线程下载( 网盘直接下载 )          |       [下载][20]       |
-|         Snipaste          |               兼具截图和贴图功能                |       [下载][30]       |
+|         Snipaste          |               兼具截图和贴图功能                |       [下载][30] \| [github][34]      |
 |         TeamViewer        |               电脑远程连接的工具                |       [下载][33]       |
 
 *[返回目录][32]*
@@ -97,3 +97,4 @@ Windows 总是被人吐槽设计平庸、系统臃肿、品味低下，但 Windo
 [31]: https://zh.snipaste.com/
 [32]: #目录
 [33]: https://www.teamviewer.com/zhcn/credentials/free-for-personal-use/
+[34]: https://github.com/Snipaste/feedback
