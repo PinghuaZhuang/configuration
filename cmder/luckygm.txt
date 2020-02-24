@@ -1,0 +1,7 @@
+-cur_console:d:C:\Users\Administrator\Documents\GitHub\luckygmweb -cur_console:t:gm-server -cur_console:C:C:\AppData\cmder\icons\cmder.ico cmd /c ""%ConEmuDir%\..\git-for-windows\bin\bash" --login -i"
+
+-cur_console:d:C:\Users\Administrator\Documents\GitHub\luckyperformanceweb -cur_console:t:per-server -cur_console:C:C:\AppData\cmder\icons\cmder.ico cmd /c ""%ConEmuDir%\..\git-for-windows\bin\bash" --login -i"
+
+-cur_console:d:C:\Users\Administrator\Documents\GitHub\luckygmweb -cur_console:t:gm-client -cur_console:C:C:\AppData\cmder\icons\cmder.ico cmd /c ""%ConEmuDir%\..\git-for-windows\bin\bash" --login -i"
+
+> -cur_console:d:C:\Users\Administrator\Documents\GitHub\luckyperformanceweb -cur_console:t:per-client -cur_console:C:C:\AppData\cmder\icons\cmder.ico cmd /c ""%ConEmuDir%\..\git-for-windows\bin\bash" --login -i"
