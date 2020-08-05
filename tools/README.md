@@ -94,7 +94,7 @@ Windows 总是被人吐槽设计平庸、系统臃肿、品味低下，但 Windo
 [28]: https://www.digimezzo.com/content/software/dopamine/
 [29]: https://www.getpostman.com/apps
 [30]: https://zh.snipaste.com/
-[31]: https://zh.snipaste.com/
+[31]: https://notepad-plus-plus.org/downloads
 [32]: #目录
 [33]: https://www.teamviewer.com/zhcn/credentials/free-for-personal-use/
 [34]: https://github.com/Snipaste/feedback
