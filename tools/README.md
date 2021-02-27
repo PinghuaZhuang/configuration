@@ -44,6 +44,7 @@ Windows 总是被人吐槽设计平庸、系统臃肿、品味低下，但 Windo
 |         Snipaste          |               兼具截图和贴图功能                |       [下载][30] \| [github][34]      |
 |         TeamViewer        |               电脑远程连接的工具                |       [下载][33]       |
 | 火绒安全 |                       电脑安全管理                       | [下载][35] |
+| ScreenToGif | 屏幕gif录屏 | [下载][36] |
 
 *[返回目录][32]*
 
@@ -100,3 +101,5 @@ Windows 总是被人吐槽设计平庸、系统臃肿、品味低下，但 Windo
 [33]: https://www.teamviewer.com/zhcn/credentials/free-for-personal-use/
 [34]: https://github.com/Snipaste/feedback
 [35]: https://www.huorong.cn/
+
+[36]: https://www.screentogif.com/
